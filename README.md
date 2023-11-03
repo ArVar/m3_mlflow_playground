@@ -26,7 +26,7 @@ The `docker-compose.yml` provides 4 services, accordingly:
 1. Clone (download) this repository
 
     ```bash
-    git clone https://github.com/arvar/m3-mlflow-playground.git
+    git clone https://github.com/ArVar/m3_mlflow_playground.git
     ```
 
 2. `cd` into the `m3-mlflow-playground` directory
