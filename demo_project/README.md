@@ -76,8 +76,7 @@ Now you can do the following steps:
 2. Tell poetry which python to use:
 
     ```bash
-    poetry env use <path_to_your_python_binary> 
-    # e.g. %USERPROFILE%\.conda\envs\m3-mlflow-playground\python.exe
+    poetry env use <path_to_your_python_binary>  # e.g. %USERPROFILE%\.conda\envs\m3-mlflow-playground\python.exe
     ```
 
     You can check the used Python environment by typing:
@@ -96,34 +95,18 @@ Happy testing & coding! 😊
 
 ### Example
 
+Everything has to be set up like described above.
+Now you can:
 
+1. Create a user by running `create_user.py`.
 
-2. Install MLflow with extra dependencies, including scikit-learn
+2. Give the user `MANAGE` permissions on the experiment with ID `0` (Default Experiment).
 
-    ```bash
-    pip install mlflow[extras]
-    ```
-
-3. Set environmental variables
-
-    ```bash
-    export MLFLOW_TRACKING_URI=http://localhost:5000
-    export MLFLOW_S3_ENDPOINT_URL=http://localhost:9000
-    ```
-4. Set MinIO credentials
-
-    ```bash
-    cat <<EOF > ~/.aws/credentials
-    [default]
-    aws_access_key_id=minio
-    aws_secret_access_key=minio123
-    EOF
-    ```
-
+3. Run the demo training with `demo.py`
 
 
 ## Sources
 
-https://github.com/sachua/mlflow-docker-compose
+* https://github.com/sachua/mlflow-docker-compose
 
-https://github.com/Toumash/mlflow-docker
+* https://github.com/Toumash/mlflow-docker
