@@ -107,6 +107,12 @@ Now you can:
 
 ## Sources
 
+* https://min.io/docs
+
+* https://python-poetry.org
+
+* https://mlflow.org/docs/latest/index.html
+
 * https://github.com/sachua/mlflow-docker-compose
 
 * https://github.com/Toumash/mlflow-docker
